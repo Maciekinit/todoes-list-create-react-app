@@ -27,4 +27,4 @@ A simple application that allows users to create tasks and to-dos with the abili
 
 ## Demo
 
-Visit my website here: [Demo](https://maciekinit.github.io/To-Do__List/)
+Visit my website here: [Demo]( https://maciekinit.github.io/todoes-list-create-react-app/)
