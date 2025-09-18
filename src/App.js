@@ -27,7 +27,7 @@ function App() {
         body={
           <Tasks tasks={tasks} hideDoneTasks={hideDoneTasks} />
         }
-        extaheaderContent={
+        extraheaderContent={
           <Buttons tasks={tasks} hideDoneTasks={hideDoneTasks} />
         }
       />
