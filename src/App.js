@@ -8,41 +8,46 @@ import Container from "./Container";
 
 
 
-const tasks = [
-    { id: 1, content: "Przejść na React.js", done: true },
-    { id: 2, content: "Zrobić zakupy", done: false },
-    { id: 3, content: "Odebrać pranie", done: false },
-];
+const tasks =
 
-function App() {
-    const [hideDone, setHideDone] = useState(false);
+    function App() {
+        const [hideDone, setHideDone] = useState(false);
+        const [tasks, setTasks] = useState([
+            { id: 1, content: "Przejść na React.js", done: true },
+            { id: 2, content: "Zrobić zakupy", done: false },
+            { id: 3, content: "Odebrać pranie", done: false },
+        ]);
 
-    const toggleHideDone = () => {
-        setHideDone(hideDone => !hideDone);
-    };
+        const toggleHideDone = () => {
+            setHideDone(hideDone => !hideDone);
+        };
 
-    return (
-        <Container>
-            <Header title="Lista zadań" />
-            <Section
-                title="Dodaj nowe zadanie"
-                body={<Form />}
-            />
+        const removeTask = (id) => {
+            setTasks(tasks => tasks.filter(task => task.id !== id));
+        };
 
-            <Section
-                title="Lista zadań"
-                body={<Tasks tasks={tasks} hideDone={hideDone} />
-                }
-                extraHeaderContent={
-                    <Buttons
-                        tasks={tasks}
-                        hideDone={hideDone}
-                        toggleHideDone={toggleHideDone}
-                    />
-                }
-            />
-        </Container>
-    );
-}
+        return (
+            <Container>
+                <Header title="Lista zadań" />
+                <Section
+                    title="Dodaj nowe zadanie"
+                    body={<Form />}
+                />
+
+                <Section
+                    title="Lista zadań"
+                    body={<Tasks tasks={tasks} hideDone={hideDone} removeTask={removeTask} />
+                    }
+                    extraHeaderContent={
+                        <Buttons
+                            tasks={tasks}
+                            hideDone={hideDone}
+                            toggleHideDone={toggleHideDone}
+                        />
+                    }
+                />
+            </Container>
+        );
+    }
 
 export default App;
