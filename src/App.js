@@ -8,10 +8,10 @@ import Header from "./Header";
 import Container from "./Container";
 
 const getInitialTasks = () => {
-    const tasksFormLocalStorage = localStorage.getItem("tasks");
+    const tasksFromLocalStorage = localStorage.getItem("tasks");
 
-    return tasksFormLocalStorage
-        ? JSON.parse(tasksFormLocalStorage)
+    return tasksFromLocalStorage
+        ? JSON.parse(tasksFromLocalStorage)
         : []
 };
 
