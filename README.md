@@ -13,14 +13,17 @@ screenshot
 
 ## Description
 
-A simple application that allows users to create tasks and to-dos with the ability to add new completed tasks or delete them.
+✅ To-do List in React.
+A simple, fully functional web app built in React for efficiently managing daily tasks. The app stores state in the browser's memory, ensuring task persistence.
 
 ## Technologies used
 
-- The website is built with the following languages: **HTML**, **JavaScript**, **CSS**.
-- **BEM** code has been added.
-- An icon has been added to the page.
-- Normalize **CSS** included (https://cdnjs.com/libraries/normalize)
+- Persistent State: All tasks are automatically saved to the browser's localStorage thanks to the logic implemented in the hook.
+- Status Management: Ability to mark tasks as completed/incomplete.
+- Filtering: Ability to hide completed tasks with a button.
+- Deleting Tasks: Functionality to delete individual items.
+- Bulk Status Change: A button to mark all tasks as complete.
+- Normalize **CSS** included [CSS](https://cdnjs.com/libraries/normalize)
 
 ## Demo
 
