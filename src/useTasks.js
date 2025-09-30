@@ -5,7 +5,7 @@ const getInitialTasks = () => {
 
     return tasksFromLocalStorage
         ? JSON.parse(tasksFromLocalStorage)
-        : []
+        : [];
 };
 
 export const useTasks = () => {
