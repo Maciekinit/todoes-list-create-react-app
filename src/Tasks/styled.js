@@ -12,7 +12,7 @@ grid-template-columns: auto 1fr auto;
 grid-gap: 10px;
 align-items: center;
 padding: 10px;
-border-bottom: 1px solid ${({ theme }) => theme.color.alte};
+border-bottom: 1px solid ${({ theme }) => theme.color.alto};
 
 ${({ hidden }) => hidden && css`
 display: none;
