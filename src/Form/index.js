@@ -1,7 +1,6 @@
 import { useState, useRef } from 'react';
 import { Button, Input, StyledForm } from "./styled";
 
-
 const Form = ({ addNewTask }) => {
     const [newTaskContent, setNewTaskContent] = useState("");
     const inputRef = useRef(null);
