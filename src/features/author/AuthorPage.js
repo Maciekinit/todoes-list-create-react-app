@@ -8,14 +8,14 @@ export default () => (
         <Section
             title="Mr. Maciek"
             body={(
-                <><p><strong>Cześć! W wolnych chwilach uwielbiam słuchać muzyki🎧</strong>.
-                    Długie spacery to dla mnie idealny sposób na <em>relaks i zebranie myśli
-                        na świeżym powietrzu</em>🚶‍♀️.
+                <><p><strong>Cześć</strong>! W wolnych chwilach uwielbiam słuchać muzyki🎧.
+                    Długie spacery to dla mnie idealny sposób na relaks i zebranie myśli
+                    na <em>świeżym powietrzu</em>🚶‍♀️.
                     Jestem też osobą ciekawą świata i pasjonuje mnie nauka nowych rzeczy.
                     Ostatnio najwięcej czasu poświęcam na rozwijanie
                     swoich umiejętności w świecie programowania⚛️,
-                    co sprawia mi ogromną satysfakcję
-                    i otwiera przede mną zupełnie nowe możliwości. 🚀
+                    co sprawia mi ogromną <em>satysfakcję
+                        i otwiera</em> przede mną zupełnie nowe możliwości. 🚀
                 </p>
                 </>
             )}
