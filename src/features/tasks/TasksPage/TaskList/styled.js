@@ -2,7 +2,7 @@ import styled, { css } from "styled-components";
 import { NavLink } from "react-router-dom";
 
 export const StyledLink = styled(NavLink)`
-    color: ${({ theme }) => theme.colors.mirage};
+    color: ${({ theme }) => theme.color.teal};
     text-decoration: none;
 
         &:hover {        
