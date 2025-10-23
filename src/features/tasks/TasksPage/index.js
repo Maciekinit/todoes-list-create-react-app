@@ -5,13 +5,16 @@ import Section from "../../../common/Section";
 import Header from "../../../common/Header";
 import Container from "../../../common/Container";
 import Search from './Search';
+import FetchExampleTasksButton from "./FetchExampleTasksButton";
 
 function TasksPage() {
     return (
         <Container>
             <Header title="Lista zadań" />
+
             <Section
                 title="Dodaj nowe zadanie"
+                extraHeaderContent={<FetchExampleTasksButton />}
                 body={<Form />}
             />
             <Section
@@ -21,8 +24,8 @@ function TasksPage() {
 
             <Section
                 title="Lista zadań"
-                body={<TaskList />}
                 extraHeaderContent={<Buttons />}
+                body={<TaskList />}
             />
         </Container>
     );
