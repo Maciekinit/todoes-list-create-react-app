@@ -1,7 +1,6 @@
-import Form from "./Form";
-import Section from "../../common/Section";
-import Header from "../../common/Header";
-import Container from "../../common/Container";
+import Section from "../../../common/Section";
+import Header from "../../../common/Header";
+import Container from "../../../common/Container";
 import { useParams } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import { getTaskById } from '../tasksSlice';

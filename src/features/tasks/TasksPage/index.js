@@ -1,9 +1,9 @@
 import TaskList from "./TaskList";
 import Form from "./Form";
 import Buttons from "./Buttons";
-import Section from "../../common/Section";
-import Header from "../../common/Header";
-import Container from "../../common/Container";
+import Section from "../../../common/Section";
+import Header from "../../../common/Header";
+import Container from "../../../common/Container";
 import Search from './Search';
 
 function TasksPage() {

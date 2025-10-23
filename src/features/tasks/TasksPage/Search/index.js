@@ -2,7 +2,7 @@ import Input from "../../Input";
 import { useLocation, useHistory } from "react-router-dom";
 import { Wrapper } from "./styled";
 import searchQueryParamName from "../searchQueryParamName";
-import { useReplaceQueryParameter, useReplaceQueryParameter } from "../queryParameters";
+import { useReplaceQueryParameter, useQueryParameter } from "../queryParameters";
 
 export default () => {
     const query = useQueryParameter(searchQueryParamName);
