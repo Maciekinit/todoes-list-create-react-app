@@ -22,7 +22,7 @@ export const Button = styled.button`
   }
 
   &:active {
-    filter: brightness(120%);
+    filter: brightness(130%);
   }
 
   &:disabled {
