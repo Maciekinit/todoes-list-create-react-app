@@ -24,13 +24,18 @@ const tasksSlice = createSlice({
         setAllDone: state => {
             state.tasks.forEach(task => {
                 task.done = true;
-            }
-            )
+            })
         },
-        fetchExampleTasks: () => { },
-        setTasks: (state, { payload: tasks }) => {
+        fetchExampleTasks: () => {
+            state.loadin = true;
+        },
+        fetchExampleTasksSucces: (state, { payload: tasks }) => {
             state.tasks = tasks;
-        }
+            state.loading = false;
+        },
+        fetchExampleTasksError: (state) => {
+            state.loading = false;
+        },
     },
 });
 
