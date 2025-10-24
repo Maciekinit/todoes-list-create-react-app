@@ -1,10 +1,9 @@
 import Input from "../../Input";
-import { useLocation, useHistory } from "react-router-dom";
 import { Wrapper } from "./styled";
 import searchQueryParamName from "../searchQueryParamName";
 import { useReplaceQueryParameter, useQueryParameter } from "../queryParameters";
 
-export default () => {
+const Search = () => {
     const query = useQueryParameter(searchQueryParamName);
     const replaceQueryParameter = useReplaceQueryParameter();
 
@@ -25,3 +24,5 @@ export default () => {
         </Wrapper>
     );
 };
+
+export default Search;
