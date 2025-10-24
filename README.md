@@ -9,7 +9,7 @@ screenshot
 
 - [Description](#description)
 - [technologies](#technologies-used)
-- [Features](#Features)
+- [Features](#features)
 - [Demo](#demo)
 
 ## Description
