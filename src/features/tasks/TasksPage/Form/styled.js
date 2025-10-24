@@ -6,7 +6,7 @@ export const StyledForm = styled.form`
   grid-gap: 20px;
 
   @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
-    grid-template-columns: 1 fr;
+    grid-template-columns: 1fr;
   }
 `;
 
@@ -16,13 +16,18 @@ export const Button = styled.button`
   color: ${({ theme }) => theme.color.white};
   border: none;
   transition: 0.6s;
+  cursor: pointer;
 
   &:hover {
     filter: brightness(110%);
-    transform: scale(1.1);
+    transform: scale(1.05);
   }
 
   &:active {
     filter: brightness(120%);
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
+    width: 100%;
   }
 `;
