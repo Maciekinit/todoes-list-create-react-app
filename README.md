@@ -1,29 +1,56 @@
 # To-do list
 
 screenshot
-![To-do list](https://github.com/Maciekinit/To-Do__List/blob/main/images/Todolist.jpg?raw=true)
+![To-do list](imageshot-min.gif)
 
-![To-do-list-create-react-app](image.png)
+![To-do-list-create-react-app](imagesfilter-min.gif)
 
 ## Table of contents
 
 - [Description](#description)
 - [technologies](#technologies-used)
+- [Functionalities](#Functionalities)
 - [Demo](#demo)
 
 ## Description
 
-✅ To-do List in React.
-A simple, fully functional web app built in React for efficiently managing daily tasks. The app stores state in the browser's memory, ensuring task persistence.
+✅ **To-do List**
+
+A simple, fully functional web app built in **React** for efficiently managing daily tasks.  
+The app stores state in the browser's memory, ensuring **task persistence** even after reloading the page.
+
+The project demonstrates modern front-end architecture and asynchronous state management techniques using **Redux Toolkit** and **Redux-Saga**.
 
 ## Technologies used
 
-- Persistent State: All tasks are automatically saved to the browser's localStorage thanks to the logic implemented in the hook.
-- Status Management: Ability to mark tasks as completed/incomplete.
-- Filtering: Ability to hide completed tasks with a button.
-- Deleting Tasks: Functionality to delete individual items.
-- Bulk Status Change: A button to mark all tasks as complete.
+- ⚛️ **React** – component-based UI library
+- 🧠 **Redux Toolkit** – modern and simplified state management
+- 🌀 **Redux-Saga** – handling side effects and asynchronous logic
+- 🌐 **React Router** – managing navigation between app views
+- 💾 **localStorage** – - Persistent State: All tasks are automatically saved to the browser's localStorage thanks to the logic implemented in the hook.
+- 🧩 **styled-components** – CSS-in-JS for modular and maintainable styling
 - Normalize **CSS** included [CSS](https://cdnjs.com/libraries/normalize)
+
+## Features
+
+- ✅ **Persistent State:** All tasks are automatically saved to `localStorage` using Redux logic.
+- ⚡ **Asynchronous Example Tasks:** Users can fetch example tasks via an **asynchronous Saga call** that simulates an API request.  
+  This demonstrates practical usage of **Redux-Saga** for side effects and async data fetching.
+- 🗂️ **Filtering:** Ability to hide completed tasks with a toggle.
+- 🗑️ **Deleting Tasks:** Functionality to remove individual items.
+- 🟩 **Bulk Actions:** Button to mark all tasks as complete or hide completed ones.
+- 🎨 **Responsive Design:** Fully optimized for mobile and desktop.
+- 🧭 **Routing:** Application includes navigation using **React Router** – for example, the "Tasks" and "About author" sections.
+
+## Why this project?
+
+This app showcases not only fundamental React knowledge but also:
+- understanding of **Redux architecture** (actions, reducers, selectors),
+- implementation of **asynchronous workflows** with Redux-Saga,
+- clean and reusable **component structure**,
+- practical use of **theme and breakpoints** for styling.
+
+It’s designed to demonstrate the ability to build scalable, real-world React applications that are both **performant** and **maintainable**.
 
 ## Demo
 
